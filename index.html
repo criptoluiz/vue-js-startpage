@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Start</title>
+    <script src="https://kit.fontawesome.com/85d667d854.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div id="app" class="weather-component">{{update()}}
+            <img class="weather-icon" v-bind:src="weIcon" alt="">
+            <h1>Porto Alegre</h1>
+            <p class="weather-temp">{{ weTemp }}</p><p>ºC</p><p> - </p><p class="weather-desc">{{ weDesc }}</p>
+        </div>
+
+        <div class="search-box">
+            <form action="https://www.google.com/search" class="searchform" method="get" name="searchform">
+                <input type="text" name="q" autocomplete="off"  placeholder="Search Google">
+            </form>
+        </div>
+        <div class="buttons">            
+            <a href="https://reddit.com"><i class="fab fa-reddit-alien"></i></a>
+            <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com"><i class="fab fa-github"></i></a>
+            <a href="https://autistici.org"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

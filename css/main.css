@@ -1,0 +1,70 @@
+.weather-component {
+  height: 235px;
+  width: 30vw;
+  border: 1px solid white;
+  text-align: center;
+}
+.weather-component h1 {
+  margin: 1vh 0;
+}
+.weather-component p {
+  display: inline;
+  margin: 2vh 0;
+}
+.weather-component .weather-icon {
+  background-color: #999999;
+  border-radius: 15px;
+  margin: 3vh 0 1vh 0;
+}
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #424242;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container .search-box {
+  margin: 2vh 0;
+}
+.container .search-box input {
+  width: 30vw;
+  height: 35px;
+  color: white;
+  padding-left: 1rem;
+  background-color: inherit;
+  border: 1px solid white;
+}
+.container .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.container .buttons a {
+  border: 1px solid white;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 30px 30px;
+  margin: 15px;
+}
+.container .buttons a i {
+  font-size: 35px;
+  background-color: inherit;
+}
+.container .buttons a:hover {
+  background-color: #999999;
+}
+
+/*# sourceMappingURL=main.css.map */

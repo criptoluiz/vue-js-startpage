@@ -1,0 +1,58 @@
+@use 'weather.scss';
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 25.9%);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .search-box {
+        margin: 2vh 0;
+
+        input {
+            width: 30vw;
+            height: 35px;
+            color: white;
+            padding-left: 1rem;
+            background-color: inherit;
+            border: 1px solid white;
+        }
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+        a {
+            border: 1px solid white;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            padding: 30px 30px;
+            margin: 15px;
+            i {
+                font-size: 35px;
+                background-color: inherit;
+            }
+        }
+    
+        a:hover{
+            background-color: hsl(0, 0%, 60%);
+        }
+    }
+
+
+}
