@@ -1,7 +1,8 @@
 .weather-component {
     height: 235px;
     width: 30vw;
-    border: 1px solid white;
+    min-height: 235px;
+    max-width: 190px;
     text-align: center;
 
     h1 {
