@@ -31,10 +31,13 @@ body {
     }
 
     .buttons {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 50% 50%;
         justify-content: center;
         align-items: center;
         height: auto;
+        margin-top: 1rem;
 
         a {
             border: 1px solid white;
